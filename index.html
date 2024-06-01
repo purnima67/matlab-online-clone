@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="input.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="h-auto flex justify-between p-4">
+    <div class="h-auto flex ml-14">
+      <img class="h-10 w-10" src="data:image/jpeg;base64,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" alt="logo">
+      <h1 class="text-2xl text-blue-500">MathWorks</h1>
+    </div>
+    <ul class="flex justify-between me-52">
+      <li class="mr-5">Products</li>
+      <li class="mr-5">Solutions</li>
+      <li class="mr-5">Academia</li>
+      <li class="mr-5">Support</li>
+      <li class="mr-5">Community</li>
+      <li class="mr-5">Events</li>
+    </ul>
+    <div class="flex">
+      <button class="border-2 px-2.5 rounded">Get Matlab</button>
+      <div class="ml-8 mt-2">
+      <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="ml-7 me-8 mt-2">
+      <i class="fa-solid fa-grip"></i>
+    </div>
+    </div>
+  </nav>
+  <div class="h-auto flex justify-between bg-blue-900">
+   <h1 class="text-2xl ml-20">MATLAB</h1>
+   <div class="flex justify-between">
+    <div class="h-8rem flex mt-2 me-7">
+      <input type="search" class="mb-2 w-96  bg-white border-2 h-4rem border-white-400 " placeholder="Search Mathworks.com">
+      <div class="bg-blue-700 h-2rem mb-2 pl-2 pr-2 me-2">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    </div>
+    </div>
+   </div>
+  <div class="ml-20 p-2">
+    <ul class="flex">
+      <li><a class="mr-2 border-r border-black pr-2">Overview</a></li>
+      <li><a class="mr-2 border-r border-black pr-2 text-blue-500">Matlab Online Versions</a></li>
+      <li><a class="mr-2 border-r border-black pr-2 text-blue-500">Connections</a></li>
+      <li><a class="mr-2 border-r border-black pr-2 text-blue-500">Specifications and Limitations</a></li>
+    </ul>
+  </div>
+  <div class="relative  h-[30rem] bg-cover bg-center" style="background-image: url('data:image/jpeg;base64,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');">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div> 
+    <div class="relative  flex flex-col  h-full text-white">
+      <h1 class="text-3xl font-bold mt-44 ml-20">MATLAB Online</h1>
+      <p class="mt-4 text-2xl w-96 ml-20">
+        Use MATLAB and Simulink through your
+        web browser
+        </p>
+      <button class="mt-8 ml-20 p-3 w-64 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">Open Matlab Online</button>
+      <p class="ml-20">Sign in to get started. <a class="underline">Check your eligibility</a></p>
+    </div>
+  </div>
+ <div class="flex justify-between items-center">
+  <div class="flex flex-col text-center">
+   <h3 class="text-3xl text-orange-800 font-bold mt-3 text-center ">Access the Latest Version of MATLAB<br> Through Your Web Browser</h3>
+   <p class="text-center mt-8 ml-20 me-12"> . Use your<span class="text-blue-800"> MATLAB, Simulink,</span> and <span class="text-blue-800"> add-on products*</span> anywhere without downloads, installations, or set up </p>
+   
+  <p class="text-blue-600 me-[28rem] mt-5"> <span><i class="fa-solid fa-arrow-right"></i></span> Learn More</p>
+  </div>
+  <div>
+    <img class="h-[20rem] w-[35rem] me-28" src="https://www.mathworks.com/products/matlab-online/_jcr_content/mainParsys/band_copy/mainParsys/column_0_copy/2/image.adapt.full.medium.jpg/1715198493545.jpg" alt="">
+  </div>
+ </div>
+ <div class="flex justify-center align-center bg-gray-100">
+  <div class="items-center my-auto">
+    <h3 class="text-3xl text-orange-800 font-bold">Use Resources on the MathWorks Cloud</h3>
+    <ul class="custom-list list-disc list-inside text-gray-700">
+      <li class="mt-3">Get 1 vCPU with 4GB of memory (provided compute) with ability to burst depending on load</li>
+      <li class="mt-3">Get 5GB (free) or 20GB (licensed) storage through MATLAB Drive</li>
+      <li class="mt-3">Share your work and collaborate with anyone</li>
+    </ul>
+    <p class="text-blue-400 mt-5"><span class="me-2"><i class="fa-brands fa-youtube"></i></span>Share and Collaborate with MATLAB online and MATLAB Drive (3:06) </p>
+    <p class="text-blue-600 me-[28rem] mt-5"> <span><i class="fa-solid fa-arrow-right"></i></span> Learn More</p>
+  </div>
+  <div>
+    <img class="h-[28rem] w-[35rem]" src="https://www.mathworks.com/products/matlab-online/_jcr_content/mainParsys/band_copy_copy_copy/mainParsys/column_0_copy/2/image_1770274954.adapt.full.medium.jpg/1715198493672.jpg" alt="">
+  </div>
+ </div>
+ <div class="flex justify-center align-center mt-10">
+  <div class="items-center my-auto">
+    <h3 class="text-3xl text-orange-800 font-bold">Connect Your Resources to MATLAB Online</h3>
+    <ul class="custom-list list-disc list-inside text-gray-700">
+      <li class="mt-3">Get additional compute resources using Cloud Center</li>
+      <li class="mt-3">Access files from your desktop and cloud storage</li>
+      <li class="mt-3">Connect to hardware and sensors</li>
+    </ul>
+    <p class="text-blue-400 mt-5"><span class="me-2"><i class="fa-brands fa-youtube"></i></span>Share and Collaborate with MATLAB online and MATLAB Drive (3:06) </p>
+    <p class="text-blue-600 me-[28rem] mt-5"> <span><i class="fa-solid fa-arrow-right"></i></span> Learn More</p>
+  </div>
+  <div>
+    <img class="h-[28rem] w-[35rem]" src="https://www.mathworks.com/products/matlab-online/_jcr_content/mainParsys/band_copy_copy/mainParsys/column_0_copy/2/image.adapt.620.medium.svg/1715198493786.svg" alt="">
+  </div>
+ </div>
+
+ <div class=" h-[15rem]  bg-gray-200 flex flex-col justify-center">
+  <h1 class=" text-center">Get Started</h1>
+  <button class="mt-5 p-3 bg-blue-500 hover:bg-blue-700 w-[15rem] mx-auto text-white font-bold rounded">Start Using Matlab Online</button>
+ </div>
+ <div class="grid grid-cols-2">
+  <div>
+    <h3 class="text-orange-900 font-bold ml-20 text-2xl">MATLAB Online Resources</h3>
+    <ul>
+      <li class="ml-20 mt-6  text-gray-700 font-bold"><span class="mr-4"><i class="fa-solid fa-book"></i></span>MATLAB Documentation</li>
+      <li class="ml-20 mt-2  text-gray-700 font-bold"><span class="mr-4"><i class="fa-regular fa-address-book"></i></span>Contact Technical Support</li>
+      <li class="ml-20 mt-2  text-gray-700 font-bold"><span class="mr-4"><i class="fa-solid fa-file"></i></span>System Requirements</li>
+      <li class="ml-20 mt-2  text-gray-700 font-bold"><span class="mr-1"><i class="fa-solid fa-gears"></i></span>Supprted Toolbox And Limitations</li>
+      <li class="ml-20 mt-2 font-bold text-gray-700"><span class="mr-3"><i class="fa-brands fa-centercode"></i></span>Trust Center</li>
+    </ul>
+  </div>
+  <div class="flex items-center w-[30rem] h-[10rem] border-gray-400 border-2 mt-5">
+   <img class="h-[5rem] w-[5rem] ml-20 " src="https://www.mathworks.com/products/matlab-online/_jcr_content/mainParsys/band_101045187/mainParsys/columns/2/panel/panelParsys/columns/bb2c1f31-ae73-4e53-b1bb-a8fea702a625/pictogram.adapt.full.medium.svg/1715198494350.svg" alt="">
+   <h1>
+    Have an Enhancement Request?
+    <p class="text-blue-600 me-[28rem] mt-5 w-[20rem]"> <span><i class="fa-solid fa-arrow-right"></i></span> Learn More</p>
+   </h1>
+
+  </div>
+ </div>
+
+ <footer class="bg-gray-300 text-black py-12 mt-5">
+  <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+          <div>
+              <h3 class="font-semibold mb-4">Mathworks</h3>
+              <ul>
+                  <li class=""><p class="font-thin">Accelerating the pace of engineering and science</p></li>
+                  <li class="mt-2"><p class="font-thin">MathWorks is the leading developer of mathematical computing software for engineers and scientists.</p></li>
+                  <li class="mt-2"><a href="#" class="hover:underline">Downloads</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-4">Try or Buy</h3>
+              <ul>
+                  <li><a href="#" class="hover:underline">Downloads</a></li>
+                  <li><a href="#" class="hover:underline mt-2">Trial Software</a></li>
+                  <li><a href="#" class="hover:underline mt-2">Contact Sales</a></li>
+                  <li><a href="#" class="hover:underline mt-2">Pricing and Licensing</a></li>
+                  <li><a href="#" class="hover:underline mt-2">How to Buy</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-4">Learn to Use</h3>
+              <ul>
+                  <li><a href="#" class="hover:underline">Documentation</a></li>
+                  <li><a href="#" class="hover:underline">Tutorials</a></li>
+                  <li><a href="#" class="hover:underline">Examples</a></li>
+                  <li><a href="#" class="hover:underline">Videos and Webinars</a></li>
+                  <li><a href="#" class="hover:underline">Training</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-4">Get Support</h3>
+              <ul>
+                  <li><a href="#" class="hover:underline">Installation Help</a></li>
+                  <li><a href="#" class="hover:underline">MATLAB Answers</a></li>
+                  <li><a href="#" class="hover:underline">Consulting</a></li>
+                  <li><a href="#" class="hover:underline">License Center</a></li>
+                  <li><a href="#" class="hover:underline">Contact Support</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-4">About MathWorks</h3>
+              <ul>
+                  <li><a href="#" class="hover:underline">Careers</a></li>
+                  <li><a href="#" class="hover:underline">Newsroom</a></li>
+                  <li><a href="#" class="hover:underline">Social Mission</a></li>
+                  <li><a href="#" class="hover:underline">Customer Stories</a></li>
+                  <li><a href="#" class="hover:underline">About MathWorks</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-4">Products</h3>
+              <ul>
+                  <li><a href="#" class="hover:underline">MATLAB</a></li>
+                  <li><a href="#" class="hover:underline">Simulink</a></li>
+                  <li><a href="#" class="hover:underline">Student Software</a></li>
+                  <li><a href="#" class="hover:underline">Hardware Support</a></li>
+                  <li><a href="#" class="hover:underline">File Exchange</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div>
+    <div>
+     <button>United States</button>
+    </div>
+    <div>
+       
+    </div>
+  </div>
+</footer>
+</body>
+</html>
